@@ -1,0 +1,15 @@
+[Unit]
+Description=Kreo Mouse Daemon
+After=network.target
+Requires=dev-bus-usb.device
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kreo-daemon
+Restart=on-failure
+RestartSec=2
+User=kreodaemon
+Group=input
+
+[Install]
+WantedBy=multi-user.target

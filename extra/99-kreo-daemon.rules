@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="248a", ATTRS{idProduct}=="fa02", MODE="0660", GROUP="input"
+KERNEL=="uinput", MODE="0660", GROUP="input"
